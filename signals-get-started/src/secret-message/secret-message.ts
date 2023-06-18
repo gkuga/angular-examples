@@ -100,7 +100,7 @@ import { CipherService } from '../cipher/service.cipher';
     h4 {
       font-size: clamp(10px, 4vw, 20px);
       font-style: italic;
-      
+
       color: black;
       text-shadow: 0 0 2px #fff;
 
@@ -135,7 +135,7 @@ export class SecretMessageComponent implements OnInit {
     public cipher: CipherService,
     private platformLocation: PlatformLocation,
     private clipboard: Clipboard
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     let url = this.platformLocation.hash.substring(1);
